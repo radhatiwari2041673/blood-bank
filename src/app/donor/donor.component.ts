@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators,} from '@angular/forms';
-//import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-donor',
   templateUrl: './donor.component.html',
   styleUrls: ['./donor.component.css'],
-  //imports: [BrowserModule, ReactiveFormsModule],
   imports: [ReactiveFormsModule], // Assuming you want to use AppComponent
   standalone: true,
-  //hostDirectives: [{ directive: AppComponent }] // Assuming you want to use AppComponent
 })
 export class DonorComponent {
   donor: FormGroup;

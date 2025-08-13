@@ -3,12 +3,12 @@
         <a href="index.html" style="display:inline-block;background:linear-gradient(90deg,#d9534f 60%,#c9302c 100%);color:#fff;padding:8px 18px;border-radius:8px;font-weight:600;text-decoration:none;box-shadow:0 2px 8px rgba(217,83,79,0.12);font-size:1em;">← Back to Home</a>
     </div>
   <h2 class="mb-4 text-center" aling:center>Donor Registration</h2>
-  <!-- <section class="card"> -->
+  
     <form [formGroup]="donor" class="card" (ngSubmit)="onSubmit()">
     <div class="mb-3"> 
       <div class="sm-6 flex-container">
       <label class="sm-3 form-label flex-item-left">Name</label>
-      <!-- <input formControlName="name" class="form-control" placeholder="Full Name" /> -->
+     
       <input formControlName="name" class="form-control formControlName flex-item-right" placeholder="Full Name.." />
     </div>
     </div>
@@ -33,14 +33,13 @@
                         <option value="+880">+880 (BD)</option>
                         <!-- Add more as needed -->
                     </select>
-      <!-- <input formControlName="mobile" class="md-2 form-control" placeholder="1234567890" /> -->
+      
       <input formControlName="mobile" class="form-control" placeholder="mobileNumber" />
     </div>
 
     <div class="mb-3">
       <label class="form-label">Email</label>
       <input formControlName="email" class="form-control formControlName" placeholder="Email.." />
-      <!-- <input formControlName="name" class="form-control formControlName" placeholder="Full Name.." /> -->
     </div>
 
     <div class="mb-3">
@@ -67,8 +66,6 @@
     </div>
     
 <div class="mb-3">
-      <!-- <label class="form-label">City</label>
-      <input formControlCityName="city" class="form-control" /> -->
     <label for="marital-status">Marital Status:</label>
                 <select id="marital-status" name="maritalStatus" required>
                     <option value="">Select Status</option>
@@ -94,11 +91,7 @@
 </div>
 <div class="btn-group-sm mb-3">
     <input class="btn btn-primary active" type="submit" [disabled]="!donor.valid">
-      <!-- Submit -->
-    <!-- </input> --> 
     </div>
   </form>
-  <!-- </section> -->
-  
 </div>
 

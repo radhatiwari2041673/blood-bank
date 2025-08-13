@@ -5,7 +5,6 @@ import { DonorComponent } from '../donor/donor.component';
 
 @Component({
   selector: 'app-dashboard',
-  //imports: [RouterOutlet, AcceptorComponent, DonorComponent],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })

@@ -27,5 +27,4 @@ export class HomepageComponent {
     this.router.navigate(['/acceptor']);
   }
 }
-// goToAbout method is now inside the class and properly implemented.
 
