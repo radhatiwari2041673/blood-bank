@@ -1,0 +1,119 @@
+.container {
+  max-width: 900px;
+  /* max-lenght: 100px; */
+  background-color: #78abde;
+  padding: 30px;
+  padding-left: 0px;
+  margin-left: 60px;
+  margin-right: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #78abde;
+  text-align:center;
+  align-content: left;
+  margin-top: 20px;
+}
+        .card {
+            width: 80%;
+            margin: 32px auto;
+            min-width: 320px;
+            max-width: 900px;
+            /* text-align:center; */
+            background-color: #a8a7c5;
+            border-collapse: collapse;
+
+        }
+        .mobile-group {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .mobile-group select {
+            padding: 10px;
+            border: 1px solid #d9534f33;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: #f9f9f9;
+            transition: border-color 0.2s;
+        }
+        .mobile-group select:focus {
+            border-color: #d9534f;
+            outline: none;
+        }
+        .mobile-group input[type="tel"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #d9534f33;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: #f9f9f9;
+            transition: border-color 0.2s;
+        }
+        .mobile-group input[type="tel"]:focus {
+            border-color: #d9534f;
+            outline: none;
+        }
+  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text], :placeholder-shown {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+.flex-item-left {
+  background-color: '';
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-right {
+  background-color:'';
+  padding: 10px;
+  flex: 50%;
+}
+.btn-group-lg, .btn-group-sm, .btn-group-md, .btn-group-xs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}

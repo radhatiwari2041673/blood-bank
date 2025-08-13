@@ -1,0 +1,104 @@
+<div class="container mt-5 content text-center:aling text-red style:center;">
+  <div style="width:100%;text-align:left;margin-top:18px;margin-bottom:-8px;">
+        <a href="index.html" style="display:inline-block;background:linear-gradient(90deg,#d9534f 60%,#c9302c 100%);color:#fff;padding:8px 18px;border-radius:8px;font-weight:600;text-decoration:none;box-shadow:0 2px 8px rgba(217,83,79,0.12);font-size:1em;">← Back to Home</a>
+    </div>
+  <h2 class="mb-4 text-center" aling:center>Donor Registration</h2>
+  <!-- <section class="card"> -->
+    <form [formGroup]="donor" class="card" (ngSubmit)="onSubmit()">
+    <div class="mb-3"> 
+      <div class="sm-6 flex-container">
+      <label class="sm-3 form-label flex-item-left">Name</label>
+      <!-- <input formControlName="name" class="form-control" placeholder="Full Name" /> -->
+      <input formControlName="name" class="form-control formControlName flex-item-right" placeholder="Full Name.." />
+    </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Father's/Spouse Name</label>
+      <input formControlName="fatherOrSpouse" class="form-control formControlName"  placeholder="Your name.."/>
+    </div>
+
+    <div class="mb-3">
+      <label class="md-1 form-label">Mobile Number (with Country Code)</label>
+      <select id="country-code" class="form-control" name="countryCode">
+                        <option value="+91">+91 (IN)</option>
+                        <option value="+1">+1 (US)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+61">+61 (AUS)</option>
+                        <option value="+971">+971 (UAE)</option>
+                        <option value="+81">+81 (JP)</option>
+                        <option value="+49">+49 (DE)</option>
+                        <option value="+33">+33 (FR)</option>
+                        <option value="+86">+86 (CN)</option>
+                        <option value="+880">+880 (BD)</option>
+                        <!-- Add more as needed -->
+                    </select>
+      <!-- <input formControlName="mobile" class="md-2 form-control" placeholder="1234567890" /> -->
+      <input formControlName="mobile" class="form-control" placeholder="mobileNumber" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input formControlName="email" class="form-control formControlName" placeholder="Email.." />
+      <!-- <input formControlName="name" class="form-control formControlName" placeholder="Full Name.." /> -->
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Gender</label>
+      <select formControlName="gender" class="form-select" aria-label="Default select example">
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+<div class="mb-1">
+       <label for="children-count">How Many Children:</label>
+                <input type="number" id="children-count" class="form-control formControlName" name="childrenCount" min="0" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Children Name(s)</label>
+      <input formControlChildName="childrenNames" class="form-control formControlName" placeholder="Comma separated if more than one" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Address</label>
+      <textarea formControlName="address" class="form-control formControlName" rows="3"></textarea>
+    </div>
+    
+<div class="mb-3">
+      <!-- <label class="form-label">City</label>
+      <input formControlCityName="city" class="form-control" /> -->
+    <label for="marital-status">Marital Status:</label>
+                <select id="marital-status" name="maritalStatus" required>
+                    <option value="">Select Status</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+</div>
+<div class="mb-3">
+  <label for="donor-blood-type">Blood Type:</label>
+                <select id="donor-blood-type" name="bloodType" required>
+                    <option value="">Select Blood Type</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+</div>
+<div class="btn-group-sm mb-3">
+    <input class="btn btn-primary active" type="submit" [disabled]="!donor.valid">
+      <!-- Submit -->
+    <!-- </input> --> 
+    </div>
+  </form>
+  <!-- </section> -->
+  
+</div>
+

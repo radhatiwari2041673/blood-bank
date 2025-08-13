@@ -1,0 +1,48 @@
+body {
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        .login-card {
+            width: 350px;
+            margin: 80px auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,123,255,0.18);
+            padding: 32px 24px 24px 24px;
+            text-align: center;
+        }
+        .login-card h2 {
+            margin-bottom: 18px;
+            color: #007bff;
+        }
+        .login-card label {
+            display: block;
+            margin: 12px 0 6px 0;
+            text-align: left;
+            font-weight: 600;
+        }
+        .login-card input[type="text"],
+        .login-card input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 14px;
+            font-size: 1em;
+        }
+        .login-card button {
+            background: linear-gradient(90deg,#007bff 60%,#0056b3 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 8px;
+        }
+        .login-card .error {
+            color: #d9534f;
+            margin-bottom: 10px;
+        }

@@ -1,0 +1,116 @@
+body {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 48px;
+    position: relative;
+    z-index: 2;
+}
+
+.dashboard-part {
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(217,83,79,0.10);
+    padding: 36px 32px 32px 32px;
+    min-width: 320px;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blood-logo {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 18px;
+}
+
+.dashboard-part h3 {
+    color: #d9534f;
+    margin-bottom: 12px;
+}
+
+.dashboard-actions {
+    margin-top: 18px;
+}
+
+.dashboard-actions a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 10px 18px;
+    background: linear-gradient(90deg, #d9534f 60%, #c9302c 100%);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.dashboard-actions a:hover {
+    background: linear-gradient(90deg, #c9302c 60%, #d9534f 100%);
+}
+
+.main-menu {
+    background: rgba(255,255,255,0.95);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-title {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.main-menu ul li a {
+    color: #d9534f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-menu ul li a:hover {
+    color: #c9302c;
+}
+
+@media (max-width: 900px) {
+    .dashboard-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.button {
+    background: linear-gradient(90deg, #d9534f 60%, #c9302c 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #c9302c 60%, #d9534f 100%);
+}

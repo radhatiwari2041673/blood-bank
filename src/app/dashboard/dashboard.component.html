@@ -1,0 +1,61 @@
+<body>
+<header>
+        <nav class="main-menu">
+            <div class="menu-logo">
+                <svg width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 6C32 6 12 28 12 40C12 52 22 58 32 58C42 58 52 52 52 40C52 28 32 6 32 6Z" fill="#d9534f" stroke="#fff" stroke-width="2"/>
+                </svg>
+                <span class="menu-title">Blood Bank</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donor.html">Donor</a></li>
+                <li><a href="acceptor.html">Acceptor</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- <main> -->
+  <div class="main-content">
+  
+  <!-- <div class="main-content col-md-3 md-2"> -->
+        <div class="dashboard-container">
+            <div class="dashboard-part">
+                <svg class="blood-logo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 6C32 6 12 28 12 40C12 52 22 58 32 58C42 58 52 52 52 40C52 28 32 6 32 6Z" fill="#d9534f" stroke="#c9302c" stroke-width="2"/>
+                </svg>
+                <h3>Donor Registration</h3>
+                <p>Register as a blood donor and help save lives.</p>
+                <div class="dashboard-actions">
+                    <!-- <button (click)="navigateToPage()" class="button button:hover">Show Donor Component</button> -->
+                    <!-- <div *ngIf="showDonorComponent">
+                      @if(showDonorComponent) {
+                        <app-donor></app-donor>
+                      } -->
+                         <li><a routerLink="/donor">Donor Panel</a></li>
+                    </div>
+                </div>
+                <!-- </div> -->
+            <!-- </div> -->
+               <!-- <div class="main-content col-md-3 md-2"> -->
+            <div class="dashboard-part">
+                <svg class="blood-logo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 6C32 6 12 28 12 40C12 52 22 58 32 58C42 58 52 52 52 40C52 28 32 6 32 6Z" fill="#d9534f" stroke="#c9302c" stroke-width="2"/>
+                </svg>
+                <h3>Acceptor Registration</h3>
+                <p>Register as a blood acceptor and request blood donations.</p>
+                <div class="dashboard-actions">
+                     <button (click)="navigateToPage()" class="button button:hover">Show Acceptor Component</button> -->
+                    <!-- <div *ngIf="showAcceptorComponent">
+                      @if(showAcceptorComponent) { -->
+                        <!-- <app-acceptor></app-acceptor> -->
+                      <!-- }
+                    </div> -->
+                    <li><a routerLink="/acceptor">Acceptor Panel</a></li>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        </div>
+    <!-- </main> -->
+</body>

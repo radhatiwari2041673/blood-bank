@@ -1,0 +1,81 @@
+<body>
+<!-- <title>Blood Donor & Acceptor Dashboard</title> -->
+<!-- <title ngSkipHydration>
+  Blood Donor & Acceptor Dashboard
+</title> -->
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+<header>
+        <nav class="main-menu">
+            <div class="menu-logo">
+                <svg width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 6C32 6 12 28 12 40C12 52 22 58 32 58C42 58 52 52 52 40C52 28 32 6 32 6Z" fill="#d9534f" stroke="#fff" stroke-width="2"/>
+                </svg>
+                <span class="menu-title">Blood Bank</span>
+            </div>
+            <ul>
+                <!-- <li><a href="index.html">Home</a></li>
+                <li><a href="donor.html">Donor</a></li>
+                <li><a href="acceptor.html">Acceptor</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li> -->
+
+                 <ul>
+            <li><a routerLink="/dashboard">Dashboard</a></li>
+            <li><a routerLink="/homepage">Home</a></li>
+            <li><a routerLink="/donor">Donor</a></li>
+            <li><a routerLink="/acceptor">Acceptor</a></li>
+        </ul>
+            </ul>
+        </nav>
+    </header>
+<main>
+        <!-- PAGE CONTENT START -->
+         <div class="dashboard-container">
+            <div class="dashboard-part">
+        <div class="card" style="text-align:center; margin: 0 auto;">
+            <h2>Welcome! To Blood Bank</h2>
+            <p>Please Choose Your Role To Participate:</p>
+            <!-- <a href="donor.html"  class="button-link">Register as Donor</a> -->
+             <!-- <button class="button" (click)="goToDonor()">Register as Donor</button> -->
+              <div>
+             <li><a routerLink="/donor">Register as Donor</a></li>
+             <!-- <li><a routerLink="/donor">Donor Registration</a></li> -->
+              </div>
+              <br>
+              <div>
+            <!-- <a href="acceptor.html" class="button-link">Register as Acceptor</a> -->
+             <!-- <button class="button" routerLink="/acceptor">Register as Acceptor</button> -->
+              <li><a routerLink="/acceptor">Register as Acceptor</a></li>
+             <!-- <li><a routerLink="/acceptor">Acceptor Registration</a></li> -->
+              </div>
+            <!-- PAGE CONTENT END -->
+        <div style="text-align:center; margin-top:18px;">
+           <li><a routerLink="admin-login" class="button-link" style="background:linear-gradient(90deg,#007bff 60%,#0056b3 100%);color:#fff;padding:8px 18px;border-radius:8px;font-weight:600;text-decoration:none;box-shadow:0 2px 8px rgba(0,123,255,0.12);font-size:1em;">Admin Login</a></li>
+            <!-- <li><a routerLink="/donor">Register as Donor</a></li> -->
+        </div>
+        </div>
+        </div>
+        <!-- Chatbot is always present -->
+        <div id="chatbot-container">
+            <div class="chatbot-header">
+                <span>AI Chatbot</span>
+                <span class="chatbot-avatar">
+                    <svg width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="32" cy="38" rx="18" ry="16" fill="#d9534f"/>
+                        <rect x="20" y="18" width="24" height="20" rx="12" fill="#fff" stroke="#d9534f" stroke-width="2"/>
+                        <circle cx="26" cy="28" r="3" fill="#d9534f"/>
+                        <circle cx="38" cy="28" r="3" fill="#d9534f"/>
+                        <rect x="28" y="32" width="8" height="3" rx="1.5" fill="#d9534f"/>
+                        <rect x="24" y="14" width="16" height="6" rx="3" fill="#d9534f"/>
+                    </svg>
+                </span>
+            </div>
+            <div id="chat-window"></div>
+            <form id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type your question...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        </div>
+</main>
+</body>

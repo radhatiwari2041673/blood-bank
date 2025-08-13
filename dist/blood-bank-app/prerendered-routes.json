@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/": {},
+    "/acceptor": {},
+    "/dashboard": {},
+    "/donor": {},
+    "/homepage": {},
+    "/homepage/admin-login": {}
+  }
+}

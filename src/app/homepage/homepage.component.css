@@ -1,0 +1,143 @@
+body {
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        #chatbot-container {
+            position: fixed;
+            right: 32px;
+            bottom: 32px;
+            width: 340px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(217,83,79,0.18);
+            z-index: 100;
+            padding: 0 0 16px 0;
+        }
+        .chatbot-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(90deg, #d9534f 60%, #c9302c 100%);
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.2em;
+            border-radius: 16px 16px 0 0;
+            padding: 12px 18px;
+        }
+        .chatbot-avatar {
+            display: flex;
+            align-items: center;
+        }
+        #chat-window {
+            height: 180px;
+            overflow-y: auto;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            padding: 12px;
+            margin: 12px 16px 8px 16px;
+            font-size: 1em;
+        }
+        #chat-form {
+            display: flex;
+            gap: 8px;
+            margin: 0 16px;
+        }
+        #chat-input {
+            flex: 1;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        #chat-form button {
+            background: #d9534f;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .baby-girl-logo {
+            position: fixed;
+            right: 32px;
+            bottom: 8px;
+            width: 70px;
+            height: 70px;
+            z-index: 101;
+        }
+        @media (max-width: 600px) {
+            #chatbot-container {
+                width: 98vw;
+                right: 1vw;
+                bottom: 1vw;
+                border-radius: 10px;
+            }
+            .baby-girl-logo {
+                width: 48px;
+                height: 48px;
+                right: 1vw;
+                bottom: 1vw;
+            }
+        }
+
+         body {
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        .dashboard-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 48px;
+            position: relative;
+            z-index: 2;
+        }
+        .dashboard-part {
+            background: rgba(255,255,255,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(217,83,79,0.10);
+            padding: 36px 32px 32px 32px;
+            min-width: 320px;
+            max-width: 380px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .blood-logo {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 18px;
+        }
+        .dashboard-part h3 {
+            color: #d9534f;
+            margin-bottom: 12px;
+        }
+        .dashboard-actions {
+            margin-top: 18px;
+        }
+        .dashboard-actions a {
+            display: inline-block;
+            margin: 0 8px;
+            padding: 10px 18px;
+            background: linear-gradient(90deg, #d9534f 60%, #c9302c 100%);
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .dashboard-actions a:hover {
+            background: linear-gradient(90deg, #c9302c 60%, #d9534f 100%);
+        }
+        @media (max-width: 900px) {
+            .dashboard-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
